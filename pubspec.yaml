@@ -1,0 +1,45 @@
+name: dalipro
+description: Application locale pour trouver rapidement un artisan à N'Djamena.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^2.24.0
+  cloud_firestore: ^4.13.0
+  firebase_auth: ^4.15.0
+  firebase_storage: ^11.5.0
+  
+  # UI & Utils
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.2.1
+  cached_network_image: ^3.3.0
+  intl: ^0.18.1
+  image_picker: ^1.0.4
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
